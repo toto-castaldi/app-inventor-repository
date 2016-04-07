@@ -3,6 +3,7 @@ set -e
 
 if [ "$1" = 'apache' ]; then
    cd /var/www/html
+   rm -rf templates
    unzip /data/download.zip
    a2enmod headers
 
